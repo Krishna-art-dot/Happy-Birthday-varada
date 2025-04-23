@@ -1,47 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday, Varada!</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥳</text></svg>">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #fce4ec, #ff8a65); /* Lively gradient */
-            font-family: 'Arial', sans-serif;
-            color: #d81b60; /* A vibrant pink */
-            text-align: center;
-            overflow-x: hidden;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
-        h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px #f48fb1;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.7em;
-            margin-bottom: 25px;
-        }
-        .confetti {
-            position: fixed;
-            width: 10px;
-            height: 10px;
-            background-color: #fdd835; /* Yellow */
-            border-radius: 50%;
-            opacity: 0.8;
-            animation: confetti-fall 3s linear infinite,
-                       confetti-spin 2s linear infinite;
-        }
-        .confetti:nth-child(even) {
-            background-color: #e91e63;
+  <meta charset="UTF-8">
+  <title>Happy Birthday Varada!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffccd5, #ffe4e1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #880e4f;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+    }
+    p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      line-height: 1.6em;
+      background: rgba(255,255,255,0.6);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .roses {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: url('https://i.imgur.com/RKm6a8F.png');
+      background-repeat: repeat;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    .cake {
+      margin: 30px auto;
+      width: 200px;
+    }
+    .stars {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 2em;
+      animation: twinkle 2s infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="roses"></div>
+  <div class="stars">✨✨✨</div>
+  <h1>Happy Birthday, Varada!</h1>
+  <img class="cake" src="https://i.imgur.com/w1p1r9P.png" alt="Birthday Cake">
+  <p>
+    I hope your day is as amazing as you are. You honestly have no idea how much light you bring into people’s lives—especially mine. It’s not just about how beautiful you look (which, let’s be honest, you always do), but it’s your energy, your kindness, your confidence, your laugh… all those little things that make you you. I feel really lucky just getting to talk to you and be part of your world. You’re one of the most genuine people I’ve ever met, and I hope this year brings you all the happiness you deserve. Enjoy every second today—you deserve nothing less.
+  </p>
+</body>
+</html>
