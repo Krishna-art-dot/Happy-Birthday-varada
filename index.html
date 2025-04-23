@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Varada!</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('https://i.ibb.co/6m13j0d/red-rose-background.jpg') no-repeat center center fixed; /* Red rose background */
-      background-size: cover;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #880e4f;
-      text-align: center;
-      overflow-x: hidden;
-    }
-    h1 {
-      font-size: 3em;
-      margin-top: 50px;
-    }
-    p {
-      max-width: 700px;
-      margin: 20px auto;
-      font-size: 1.2em;
-      line-height: 1.6em;
-      background: rgba(255,255,255,0.6);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    .cake {
-      margin: 30px auto;
-      width: 200px;
-    }
-    .stars {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      font-size: 2em;
-      animation: twinkle 2s infinite;
-    }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
-    }
-    .music {
-      display: none;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-      p {
-        font-size: 1em;
-        padding: 15px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Varada!</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffccd5, #ffe4e1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #880e4f;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+    }
+    p {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      line-height: 1.6em;
+      background: rgba(255,255,255,0.6);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .roses {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: url('images/roses-background.png'); /* Updated path */
+      background-repeat: repeat;
+      background-size: contain;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    .cake {
+      margin: 30px auto;
+      width: 200px;
+    }
+    .stars {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 2em;
+      animation: twinkle 2s infinite;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+    .music {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="stars">✨✨✨</div>
-  <h1>Happy Birthday, Varada!</h1>
-  <img class="cake" src="https://i.ibb.co/J3fHTrS/birthday-cake.png" alt="Birthday Cake">
-  <p>
-    I hope your day is as amazing as you are. You honestly have no idea how much light you bring into people’s lives—especially mine. It’s not just about how beautiful you look (which, let’s be honest, you always do), but it’s your energy, your kindness, your confidence, your laugh… all those little things that make you <i>you</i>. I feel really lucky just getting to talk to you and be part of your world. You’re one of the most genuine people I’ve ever met, and I hope this year brings you all the happiness you deserve. Enjoy every second today—you deserve nothing less.
-  </p>
+  <div class="roses"></div>
+  <div class="stars">✨✨✨</div>
+  <h1>Happy Birthday, Varada!</h1>
+  <img class="cake" src="images/birthday-cake.png" alt="Birthday Cake">   <p>
+    I hope your day is as amazing as you are. You honestly have no idea how much light you bring into people’s lives—especially mine. It’s not just about how beautiful you look (which, let’s be honest, you always do), but it’s your energy, your kindness, your confidence, your laugh… all those little things that make you <i>you</i>. I feel really lucky just getting to talk to you and be part of your world. You’re one of the most genuine people I’ve ever met, and I hope this year brings you all the happiness you deserve. Enjoy every second today—you deserve nothing less.
+  </p>
 
-  <!-- Music Embed (One of the Girls - Jennie, The Weeknd) -->
-  <div class="music">
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/uOQXjzG4Tuw?autoplay=1&loop=1&playlist=uOQXjzG4Tuw" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-  </div>
+    <div class="music">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/uOQXjzG4Tuw?autoplay=1&loop=1&playlist=uOQXjzG4Tuw" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+  </div>
 </body>
 </html>
