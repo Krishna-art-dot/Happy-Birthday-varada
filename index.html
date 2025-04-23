@@ -1,67 +1,141 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Happy Birthday Varada!</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom right, #ffccd5, #ffe4e1);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #880e4f;
-      text-align: center;
-      overflow-x: hidden;
-    }
-    h1 {
-      font-size: 3em;
-      margin-top: 50px;
-    }
-    p {
-      max-width: 700px;
-      margin: 20px auto;
-      font-size: 1.2em;
-      line-height: 1.6em;
-      background: rgba(255,255,255,0.6);
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    .roses {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      background-image: url('https://i.imgur.com/RKm6a8F.png');
-      background-repeat: repeat;
-      opacity: 0.2;
-      z-index: -1;
-    }
-    .cake {
-      margin: 30px auto;
-      width: 200px;
-    }
-    .stars {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 2em;
-      animation: twinkle 2s infinite;
-    }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Varada!</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥳</text></svg>">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #fce4ec, #ff8a65); /* Lively gradient */
+            font-family: 'Arial', sans-serif;
+            color: #d81b60; /* A vibrant pink */
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #f48fb1;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.7em;
+            margin-bottom: 25px;
+        }
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #fdd835; /* Yellow */
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: confetti-fall 3s linear infinite,
+                       confetti-spin 2s linear infinite;
+        }
+        .confetti:nth-child(even) {
+            background-color: #e91e63; /* Pink */
+        }
+        .confetti:nth-child(3n) {
+            background-color: #4caf50; /* Green */
+        }
+        @keyframes confetti-fall {
+            to {
+                transform: translateY(105vh) scale(0.7);
+                opacity: 0;
+            }
+        }
+        @keyframes confetti-spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .balloon-container {
+            position: absolute;
+            top: 80vh;
+            left: 10vw;
+            animation: float-up 5s ease-in-out infinite alternate;
+        }
+        .balloon {
+            width: 80px;
+            height: 100px;
+            background-color: #ffcdd2; /* Light Pink */
+            border-radius: 50%;
+            position: relative;
+        }
+        .balloon::before {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 20px solid #f48fb1; /* String */
+        }
+        .balloon:nth-child(2) {
+            background-color: #f0f4c3; /* Light Yellow */
+            left: 20vw;
+            animation-delay: 1s;
+        }
+        .balloon:nth-child(3) {
+            background-color: #c8e6c9; /* Light Green */
+            left: 35vw;
+            animation-delay: 2s;
+        }
+        @keyframes float-up {
+            0% { transform: translateY(0) rotate(-5deg); opacity: 0.8; }
+            100% { transform: translateY(-100px) rotate(5deg); opacity: 0; }
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .balloon {
+                width: 60px;
+                height: 80px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="roses"></div>
-  <div class="stars">✨✨✨</div>
-  <h1>Happy Birthday, Varada!</h1>
-  <img class="cake" src="https://i.imgur.com/w1p1r9P.png" alt="Birthday Cake">
-  <p>
-    I hope your day is as amazing as you are. You honestly have no idea how much light you bring into people’s lives—especially mine. It’s not just about how beautiful you look (which, let’s be honest, you always do), but it’s your energy, your kindness, your confidence, your laugh… all those little things that make you you. I feel really lucky just getting to talk to you and be part of your world. You’re one of the most genuine people I’ve ever met, and I hope this year brings you all the happiness you deserve. Enjoy every second today—you deserve nothing less.
-  </p>
+    <div class="container">
+        <h1>Happy Birthday, Varada! 🎉</h1>
+        <p>Wishing you the happiest of birthdays, Varada! May your day be filled with joy, laughter, and everything that brings a smile to your face. You're a truly special person, and I hope this new year of your life is even more amazing than the last. Shine bright and enjoy every moment!</p>
+        <p>Thinking of all the wonderful things that make you, you! Your kindness, your spirit, and your incredible way of making the world a better place just by being in it. Have a fantastic birthday filled with love and celebration!</p>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        for (let i = 0; i < 100; i++) {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = `${Math.random() * 100}vw`;
+            confetti.style.animationDelay = `${Math.random() * 3}s`;
+            confetti.style.animationDuration = `${2 + Math.random() * 2}s`;
+            container.appendChild(confetti);
+        }
+    </script>
+
+    <div class="balloon-container">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
 </body>
 </html>
